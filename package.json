@@ -1,0 +1,16 @@
+{
+  "name": "exploring-listr",
+  "version": "0.0.1",
+  "description": "exploring listr to automate some tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohsen Shafiei Tafreshi",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^3.3.0",
+    "listr": "^0.14.3"
+  }
+}
