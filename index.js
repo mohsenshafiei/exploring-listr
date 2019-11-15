@@ -10,7 +10,13 @@ const tasks = new Listr([
 	},
   {
 		title: 'Add everything to staging',
-		task: async () => await execa('git', ['add'], ['.']).then(result => {
+		task: async () => await execa('git', ['add', '.']).then(result => {
+			console.log(result)
+		})
+	},
+  {
+		title: 'Commit',
+		task: async () => await execa('git', ['commit', '-m', '"feat: mohsen"', '.']).then(result => {
 			console.log(result)
 		})
 	},
